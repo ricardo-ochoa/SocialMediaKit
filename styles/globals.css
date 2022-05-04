@@ -1,16 +1,148 @@
+:root {
+  --color-primary: #FF5757;
+  --color-primary-accent: #000;
+  --color-button: #FF5757;
+  --color-button-text: #fff;
+
+  --color-red: #FF5757;
+  --color-green: #00DA23;
+  --color-black: #000;
+  --color-pink: #E31CB8;
+  --color-purple: #5827C1;
+  --color-tiffblue: #65D8D1;
+
+  --color-pheragraph: #616161;
+  --color-background: #f1f1f1;
+}
+
+[data-theme='red'] {
+  --color-primary: #FF5757;
+  --color-primary-accent: #000;
+  --color-button: #FF5757;
+  --color-button-text: #fff;
+}
+
+[data-theme='green'] {
+  --color-primary: #00DA23;
+  --color-primary-accent: #000;
+  --color-button: #00DA23;
+  --color-button-text: #000;
+}
+
+[data-theme='black'] {
+  --color-primary: #000;
+  --color-primary-accent: #000;
+  --color-button: #000;
+  --color-button-text: #fff;
+}
+
+[data-theme='pink'] {
+  --color-primary: #E31CB8;
+  --color-primary-accent: #000;
+  --color-button: #E31CB8;
+  --color-button-text: #fff;
+}
+
+[data-theme='purple'] {
+  --color-primary: #5827C1;
+  --color-primary-accent: #000;
+  --color-button: #5827C1;
+  --color-button-text: #fff;
+}
+
+[data-theme='tiffblue'] {
+  --color-primary: #65D8D1;
+  --color-primary-accent: #000;
+  --color-button: #65D8D1;
+  --color-button-text: #000;
+}
+
+
+
+
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  /* font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif; */
+    font-family: 'Krona One', sans-serif;
+    background-color:var( --color-background);
+    background-image: url(../src/bg.png);
+    background-repeat: repeat repeat;
+    
+  }
+  
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+  
+  p{
+    color: var(--color-pheragraph);
+    font-family: 'Jura', sans-serif;
 }
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
+h1,
+h2,
+h3{
+    font-family: 'Krona One', sans-serif;
+    color: var(--color-primary);
+  }
 
 * {
   box-sizing: border-box;
+}
+
+
+.colors{
+  display: flex;
+  flex-direction: row;
+
+}
+
+.btn-red{
+  background-color: var(--color-red);
+  border-radius: 100px;
+  width: 40px;
+  height: 40px;
+  margin-right: 1rem;
+}
+
+.btn-green{
+  background-color: var(--color-green);
+  border-radius: 100px;
+  width: 40px;
+  height: 40px;
+  margin-right: 1rem;
+  margin-bottom: 2rem;
+}
+
+.btn-black{
+  background-color: var(--color-black);
+  border-radius: 100px;
+  width: 40px;
+  height: 40px;
+  margin-right: 1rem;
+}
+.btn-pink{
+  background-color: var(--color-pink);
+  border-radius: 100px;
+  width: 40px;
+  height: 40px;
+  margin-right: 1rem;
+}
+.btn-purple{
+  background-color: var(--color-purple);
+  border-radius: 100px;
+  width: 40px;
+  height: 40px;
+  margin-right: 1rem;
+}
+.btn-tiffblue{
+  background-color: var(--color-tiffblue);
+  border-radius: 100px;
+  width: 40px;
+  height: 40px;
+  margin-right: 1rem;
 }
