@@ -27,7 +27,7 @@ const Home: NextPage = () => {
             objectFit='cover'
             alt='Dan Abramov'
             position={"absolute"}
-            ></Image>go
+            ></Image>
 
             <svg width="325" height="457" viewBox="0 0 325 457" fill={color} xmlns="http://www.w3.org/2000/svg">
               <path fillRule="evenodd" clipRule="evenodd" d="M305 2H20C10.0589 2 2 10.0589 2 20V437C2 446.941 10.0589 455 20 455H305C314.941 455 323 446.941 323 437V20C323 10.0589 314.941 2 305 2ZM20 0C8.95431 0 0 8.95432 0 20V437C0 448.046 8.9543 457 20 457H305C316.046 457 325 448.046 325 437V20C325 8.9543 316.046 0 305 0H20Z" fill={color}/>

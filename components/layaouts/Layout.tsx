@@ -2,6 +2,7 @@ import { FC } from 'react';
 
 import Head from 'next/head';
 import { Navbar } from '../ui';
+import Script from 'next/script';
 
 interface Props {
   title?: string;
@@ -22,7 +23,7 @@ export const Layout: FC<Props> = ({ children, title }) => {
           <link href="https://fonts.googleapis.com/css2?family=Jura:wght@500;600;700&family=Krona+One&display=swap" rel="stylesheet"></link>
           
       </Head>
-      
+
         <Navbar />
 
         <main style={{
@@ -30,8 +31,10 @@ export const Layout: FC<Props> = ({ children, title }) => {
         }}>
 
             { children }
-
         </main>
+
+        <Script src="https://js.stripe.com/v3/" strategy="lazyOnload"></Script>
+
       
       </>
   )

@@ -3,6 +3,14 @@ import { Button } from '@chakra-ui/react';
 import Image from 'next/image';
 import NextLink from 'next/link';
 import { BagIcon }  from './BagIcon'
+import { checkout } from '../../checkout'
+
+interface lineItems {
+
+    price: string,
+    quantity: number
+
+}
 
 
 export const Navbar = () => {
@@ -19,9 +27,21 @@ export const Navbar = () => {
         }}>
      
 
-            <Button colorScheme='primary'>
+            <button 
+
+             onClick={(() => {
+                 checkout ({
+                         lineItems: [
+                             {
+                                 price: "price_1Kwg8DKdogODcbyyHk89wkh4",
+                                 quantity: 1
+                             },
+                         ]
+                 })
+             })}
+             >
                 <h3>Comprar Kit</h3>
-            </Button>
+            </button>
 
         </div>
     )
