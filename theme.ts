@@ -3,8 +3,8 @@ import { extendTheme, theme } from "@chakra-ui/react";
 
 export default extendTheme({
     colors: {
-        primary: theme.colors["purple"],
-        secondary: theme.colors["red"],
+        primary: theme.colors["red"],
+        secondary: theme.colors["white"],
     },
     fonts: {
         heading: 'Krona One',

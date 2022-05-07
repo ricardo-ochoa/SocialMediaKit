@@ -19,8 +19,16 @@ const Home: NextPage = () => {
 
       <Layout title='Social Media Kit'>
 
-        <Stack direction={{ md:"row", sm: "column" }} spacing={{ sm: 12 }} display={{ sm: "flex" }} justifyContent={{sm:"center"}} alignItems={{ sm: "center" }}>
-          <Stack alignItems="flex-end" pr={10} >
+        <Stack direction={{ lg:"row", sm: "column" }} spacing={{ sm: 12 }} display={{ sm: "flex" }} justifyContent={{sm:"center"}} alignItems={{ sm: "center" }} mb={{ sm: 20 }}>
+          <Flex alignItems="center" justifyContent="center" pr={{ lg:10 , md:0 }} >
+            <Image 
+            src='https://res.cloudinary.com/dnxxkvpiz/image/upload/v1651897595/image_main_gjprxp.jpg'
+            boxSize='320px'
+            objectFit='cover'
+            alt='Dan Abramov'
+            position={"absolute"}
+            ></Image>
+
             <svg width="325" height="457" viewBox="0 0 325 457" fill={color} xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" clip-rule="evenodd" d="M305 2H20C10.0589 2 2 10.0589 2 20V437C2 446.941 10.0589 455 20 455H305C314.941 455 323 446.941 323 437V20C323 10.0589 314.941 2 305 2ZM20 0C8.95431 0 0 8.95432 0 20V437C0 448.046 8.9543 457 20 457H305C316.046 457 325 448.046 325 437V20C325 8.9543 316.046 0 305 0H20Z" fill={color}/>
               <path fill-rule="evenodd" clip-rule="evenodd" d="M34.5 54C44.7173 54 53 45.4934 53 35C53 24.5066 44.7173 16 34.5 16C24.2827 16 16 24.5066 16 35C16 45.4934 24.2827 54 34.5 54Z" fill={color}/>
@@ -47,15 +55,15 @@ const Home: NextPage = () => {
               <circle cx="168.217" cy="421.319" r="3.31916" fill="#E1DEDD"/>
               <circle cx="180.166" cy="421.319" r="3.31916" fill="#E1DEDD"/>
             </svg>
-          </Stack>
+          </Flex>
 
-          <Stack direction="column" w={{ sm:"100%", md:"445px" }}>
+          <Stack direction="column" w={{ sm:"100%", lg:"445px" }}>
             <Box>
-              <Heading fontSize={{ base: '25px', md: '30px', lg: '38px' }} className={styles.title} color={color}  as='h1' textAlign={{ md:"start", sm:"center" }}  mb={-12}>
+              <Heading fontSize={{ base: '25px', md: '30px', lg: '38px' }} className={styles.title} color={color}  as='h1' textAlign={{ lg:"start" , md:"center" }}  mb={-12}>
               UN AÑO DE PUBLICACIONES PARA TU MARCA
               </Heading>
 
-              <Text fontSize={{ base: '18px', md: '18px', lg: '18px' }} className={styles.description} textAlign={{ md:"start", sm:"center" }} mb={4} fontWeight={500}>
+              <Text fontSize={{ base: '18px', md: '18px', lg: '18px' }} className={styles.description} textAlign={{ lg:"start" , md:"center" }} mb={4} fontWeight={500}>
               Kit de redes sociales con mas de 365 diseños para tu marca. Disponibles en la plataforma de Canva, listos para usar.
               </Text>
 
@@ -82,12 +90,12 @@ const Home: NextPage = () => {
               </Stack>
               
               <Stack direction={{md:'row', sm:'column'}}>
-                  <Button colorScheme='primary'><h3 color={"#ffffff"}>Descargar</h3></Button>
-                  <Button colorScheme='primary' variant='outline'><h3 color={"#000"}>Kit de 30 días</h3></Button>
+                  <Button colorScheme='primary'><h3>Descargar</h3></Button>
+                  <Button colorScheme='primary' variant='outline'><h3>Kit de 30 días</h3></Button>
               </Stack>
           </Stack>
 
-        </Stack>
+        </Stack >
 
       </Layout>
 
