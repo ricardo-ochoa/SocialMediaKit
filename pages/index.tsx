@@ -19,8 +19,8 @@ const Home: NextPage = () => {
 
       <Layout title='Social Media Kit'>
 
-        <Stack direction={{ lg:"row", sm: "column" }} spacing={{ sm: 12 }} display={{ sm: "flex" }} justifyContent={{sm:"center"}} alignItems={{ sm: "center" }} mb={{ sm: 20 }}>
-          <Flex alignItems="center" justifyContent="center" pr={{ lg:10 , md:0 }} >
+        <Stack  display={{ sm: "flex" }} direction={{ lg:"row", sm: "column" }} spacing={{ sm: 12 }} justifyContent={{sm:"center"}} alignItems={{ sm: "center" }} marginBottom="100px">
+          <Flex alignItems="center" justifyContent="center" >
             <Box
              as='video'
              autoPlay loop muted
@@ -59,11 +59,11 @@ const Home: NextPage = () => {
 
           <Stack direction="column" w={{ sm:"100%", lg:"445px" }}>
             <Box>
-              <Heading fontSize={{ base: '25px', md: '30px', lg: '38px' }} className={styles.title} color={color}  as='h1' textAlign={{ lg:"start" , md:"center" }}  mb={-12}>
+              <Heading mt={14} fontSize={{ base: '25px', md: '30px', lg: '38px' }} className={styles.title} color={color}  as='h1' textAlign={{ lg:"start" , md:"center" }}>
               UN AÑO DE PUBLICACIONES PARA TU MARCA
               </Heading>
 
-              <Text fontSize={{ base: '18px', md: '18px', lg: '18px' }} className={styles.description} textAlign={{ lg:"start" , md:"center" }} mb={4} fontWeight={500}>
+              <Text fontSize={{ base: '18px' }} textAlign={{ lg:"start" , md:"center" }} mb={4} mt={4} fontWeight={500}>
               Kit de redes sociales con mas de 365 diseños para tu marca. Disponibles en la plataforma de Canva, listos para usar.
               </Text>
 
@@ -79,7 +79,7 @@ const Home: NextPage = () => {
               <Stack  w={{ sm:"100%", md:"445px" }}>
                 <Text fontSize={{ base: '18px', md: '18px', lg: '18px' }} mb={4} textAlign={{ md:"start", sm:"center" }}>Select your favorite base color:</Text>
 
-                <Flex className='colors' w={"100%"} justifyContent={"space-around"} >
+                <Flex className='colors' w={"100%"} justifyContent={"space-around"}>
                   <div className='btn-red' onClick={toggleColorMode}></div>
                   <div className='btn-green' onClick={toggleColorMode}></div>
                   <div className='btn-black' onClick={toggleColorMode}></div>
@@ -89,7 +89,7 @@ const Home: NextPage = () => {
                 </Flex>
               </Stack>
               
-              <Stack direction={{md:'row', sm:'column'}}>
+              <Stack direction={{md:'row', sm:'column'}} mb={4}>
                   <Button colorScheme='primary'><h3>Descargar</h3></Button>
                   <Button colorScheme='primary' variant='outline'><h3>Kit de 30 días</h3></Button>
               </Stack>
