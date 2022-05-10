@@ -34,7 +34,7 @@ export const success = () => {
 
                 <UnorderedList pl={10} pt={3} >
                 <ListItem><a href='mailto:socialmkit@gmail.com'> socialmkit@gmail.com </a></ListItem>
-                <ListItem><a href='https://wa.me/529931433105'  target="_blank"> WhatsApp </a></ListItem>
+                <ListItem><a href='https://wa.me/529931433105'  target="_blank" rel="noreferrer"> WhatsApp </a></ListItem>
                 </UnorderedList>
 
                 <Button alignSelf="flex-end" ml={10} mt={10}>
