@@ -15,7 +15,7 @@ export async function checkout( { lineItems } ){
     await stripe.redirectToCheckout({
         mode: 'payment',
         lineItems,
-        successUrl: `https://social-media-kit.vercel.app/success`,
+        successUrl: `${window.location.origin}/success`,
         cancelUrl: window.location.origin
     })
 }

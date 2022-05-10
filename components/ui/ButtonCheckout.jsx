@@ -1,4 +1,5 @@
 import { Button, Image } from '@chakra-ui/react'
+
 import React from 'react'
 import { checkout } from '../../checkout'
 
@@ -8,17 +9,17 @@ export const ButtonCheckout = ({copy, icon}) => {
         colorScheme='primary'
         rightIcon={<Image src={icon} alt='cart'/>}
 
+
         onClick={(() => {
             checkout ({
                     lineItems: [
                         {
-                            price: "price_1Kwg8DKdogODcbyyHk89wkh4",
+                            price: process.env.NEXT_PUBLIC_PRODUCT,
                             quantity: 1
                         },
                     ]
             })
         })}
-
         >
         <h4>{copy}</h4></Button>
   )
