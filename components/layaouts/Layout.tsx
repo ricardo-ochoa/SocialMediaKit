@@ -34,8 +34,6 @@ export const Layout: FC<Props> = ({ children, title }) => {
         </main>
 
         <Script src="https://js.stripe.com/v3/" strategy="lazyOnload"></Script>
-
-      
       </>
   )
 };

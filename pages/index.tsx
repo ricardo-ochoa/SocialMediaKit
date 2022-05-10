@@ -3,8 +3,9 @@ import type { NextPage } from 'next'
 import { SetStateAction, useEffect, useState } from 'react'
 import { Layout } from '../components/layaouts'
 import styles from '../styles/Home.module.css'
+import { ButtonCheckout } from '../components/ui/index';
 
-import { Flex, useColorMode, useColorModeValue,Text,Heading, HStack, Image, UnorderedList, ListItem, Stack, Button, Box  } from '@chakra-ui/react'
+import { Flex, useColorMode, useColorModeValue,Text,Heading, HStack, Image, UnorderedList, ListItem, Stack, Button, Box , AspectRatio } from '@chakra-ui/react'
 
 
 
@@ -21,13 +22,15 @@ const Home: NextPage = () => {
 
         <Stack  display={{ sm: "flex" }} direction={{ lg:"row", sm: "column" }} spacing={{ sm: 12 }} justifyContent={{sm:"center"}} alignItems={{ sm: "center" }} marginBottom="100px">
           <Flex alignItems="center" justifyContent="center" >
+            <AspectRatio w='321px' h='321px' position={"absolute"}>
             <Box
              as='video'
              autoPlay loop muted
-            src='https://res.cloudinary.com/dnxxkvpiz/video/upload/v1651952212/Socialemediakit/rojo_bjpuz2.mp4'
-            boxSize='321px'
-            position={"absolute"}
+              src='https://res.cloudinary.com/dnxxkvpiz/video/upload/v1651952212/Socialemediakit/rojo_bjpuz2.mp4'
+              boxSize='321px'
+              
             ></Box>
+            </AspectRatio>
 
             <svg width="325" height="457" viewBox="0 0 325 457" fill={color} xmlns="http://www.w3.org/2000/svg">
               <path fillRule="evenodd" clipRule="evenodd" d="M305 2H20C10.0589 2 2 10.0589 2 20V437C2 446.941 10.0589 455 20 455H305C314.941 455 323 446.941 323 437V20C323 10.0589 314.941 2 305 2ZM20 0C8.95431 0 0 8.95432 0 20V437C0 448.046 8.9543 457 20 457H305C316.046 457 325 448.046 325 437V20C325 8.9543 316.046 0 305 0H20Z" fill={color}/>
@@ -59,7 +62,7 @@ const Home: NextPage = () => {
 
           <Stack direction="column" w={{ sm:"100%", lg:"445px" }}>
             <Box>
-              <Heading mt={14} fontSize={{ base: '25px', md: '30px', lg: '38px' }} className={styles.title} color={color}  as='h1' textAlign={{ lg:"start" , md:"center" }}>
+              <Heading mt={0} fontSize={{ base: '25px', md: '30px', lg: '38px' }} className={styles.title} color={color}  as='h1' textAlign={{ lg:"start" , md:"center" }}>
               UN AÑO DE PUBLICACIONES PARA TU MARCA
               </Heading>
 
@@ -68,15 +71,15 @@ const Home: NextPage = () => {
               </Text>
 
               <UnorderedList  mb={6} color="#616161">
-                <ListItem><Text fontSize={{ base: '18px', md: '18px', lg: '18px' }} >Perfil</Text></ListItem>
-                <ListItem><Text fontSize={{ base: '18px', md: '18px', lg: '18px' }} >Cuadradas</Text></ListItem>
-                <ListItem><Text fontSize={{ base: '18px', md: '18px', lg: '18px' }} >Verticales</Text></ListItem>
-                <ListItem><Text fontSize={{ base: '18px', md: '18px', lg: '18px' }} >Stories</Text></ListItem>
-                <ListItem><Text fontSize={{ base: '18px', md: '18px', lg: '18px' }} >Covers facebook and likedIn</Text></ListItem>
+                <ListItem><Text fontSize={{ base: '18px', md: '18px', lg: '18px' }} >Imagen de Perfil <span> (+5)</span></Text></ListItem>
+                <ListItem><Text fontSize={{ base: '18px', md: '18px', lg: '18px' }} >Formato Cuadrados <span> (+100)</span></Text></ListItem>
+                <ListItem><Text fontSize={{ base: '18px', md: '18px', lg: '18px' }} >Formato Verticales <span> (+100)</span></Text></ListItem>
+                <ListItem><Text fontSize={{ base: '18px', md: '18px', lg: '18px' }} >Stories <span> (+135)</span></Text></ListItem>
+                <ListItem><Text fontSize={{ base: '18px', md: '18px', lg: '18px' }} >Covers facebook and likedIn and more <span> (+10)</span></Text></ListItem>
               </UnorderedList>
             </Box>
               
-              <Stack  w={{ sm:"100%", md:"445px" }}>
+              {/* <Stack  w={{ sm:"100%", md:"445px" }}>
                 <Text fontSize={{ base: '18px', md: '18px', lg: '18px' }} mb={4} textAlign={{ md:"start", sm:"center" }}>Select your favorite base color:</Text>
 
                 <Flex className='colors' w={"100%"} justifyContent={"space-around"}>
@@ -87,11 +90,12 @@ const Home: NextPage = () => {
                   <div className='btn-purple' onClick={toggleColorMode}></div>
                   <div className='btn-tiffblue' onClick={toggleColorMode}></div>
                 </Flex>
-              </Stack>
+              </Stack> */}
               
               <Stack direction={{md:'row', sm:'column'}} mb={4}>
-                  <Button colorScheme='primary'><h3>Descargar</h3></Button>
-                  <Button colorScheme='primary' variant='outline'><h3>Kit de 30 días</h3></Button>
+                <ButtonCheckout copy="Comprar Kit" icon="https://icongr.am/feather/arrow-up-right.svg?size=25&color=ffffff"/>
+                {/* <Button variant='outline' colorScheme={"secondary"} rightIcon={<Image src="https://icongr.am/feather/corner-down-right.svg?size=25&color=000" alt='Kit 30 días'/>}>Ver Kit 30 días</Button>
+               */}
               </Stack>
           </Stack>
 

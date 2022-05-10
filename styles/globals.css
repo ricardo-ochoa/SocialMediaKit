@@ -71,7 +71,6 @@ body {
     background-color:var( --color-background);
     background-image: url(../src/bg.png);
     background-repeat: repeat repeat;
-    
   }
   
   a {
@@ -88,6 +87,10 @@ h2,
 h3{
     font-family: 'Krona One', sans-serif;
     color: var(--color-primary);
+  }
+
+  h4{
+    font-family: 'Krona One', sans-serif;
   }
 
 * {
@@ -145,4 +148,11 @@ h3{
   width: 40px;
   height: 40px;
   margin-right: 1rem;
+}
+
+.tittlesuccess{
+  color: var(--color-primary-accent);
+  font-family: 'Krona One', sans-serif;
+  font-weight: 600;
+  font-size: 2rem;
 }
