@@ -22,15 +22,25 @@ const Home: NextPage = () => {
 
         <Stack  display={{ sm: "flex" }} direction={{ lg:"row", sm: "column" }} spacing={{ sm: 12 }} justifyContent={{sm:"center"}} alignItems={{ sm: "center" }} marginBottom="100px">
           <Flex alignItems="center" justifyContent="center" >
-            <AspectRatio w='321px' h='321px' position={"absolute"}>
-            <Box
+          
+            {/* <Box
              as='video'
              autoPlay loop muted
               src='https://res.cloudinary.com/dnxxkvpiz/video/upload/v1651952212/Socialemediakit/rojo_bjpuz2.mp4'
-              boxSize='321px'
+              w={'321px'}
               
-            ></Box>
-            </AspectRatio>
+              position={"absolute"}
+            ></Box> */}
+
+            <video
+            className='videomain'
+            src='https://res.cloudinary.com/dnxxkvpiz/video/upload/v1651952212/Socialemediakit/rojo_bjpuz2.mp4'
+            autoPlay loop muted
+          
+            >
+
+            </video>
+          
 
             <svg width="325" height="457" viewBox="0 0 325 457" fill={color} xmlns="http://www.w3.org/2000/svg">
               <path fillRule="evenodd" clipRule="evenodd" d="M305 2H20C10.0589 2 2 10.0589 2 20V437C2 446.941 10.0589 455 20 455H305C314.941 455 323 446.941 323 437V20C323 10.0589 314.941 2 305 2ZM20 0C8.95431 0 0 8.95432 0 20V437C0 448.046 8.9543 457 20 457H305C316.046 457 325 448.046 325 437V20C325 8.9543 316.046 0 305 0H20Z" fill={color}/>
@@ -62,7 +72,7 @@ const Home: NextPage = () => {
 
           <Stack direction="column" w={{ sm:"100%", lg:"445px" }}>
             <Box>
-              <Heading mt={0} fontSize={{ base: '25px', md: '30px', lg: '38px' }} className={styles.title} color={color}  as='h1' textAlign={{ lg:"start" , md:"center" }}>
+              <Heading mt={12} fontSize={{ base: '25px', md: '30px', lg: '38px' }} className={styles.title} color={color}  as='h1' textAlign={{ lg:"start" , md:"center" }}>
               UN AÑO DE PUBLICACIONES PARA TU MARCA
               </Heading>
 
@@ -93,7 +103,7 @@ const Home: NextPage = () => {
               </Stack> */}
               
               <Stack direction={{md:'row', sm:'column'}} mb={4}>
-                <ButtonCheckout copy="Comprar Kit" icon="https://icongr.am/feather/arrow-up-right.svg?size=25&color=ffffff"/>
+                <ButtonCheckout  copy="Comprar Kit" icon="https://icongr.am/feather/arrow-up-right.svg?size=25&color=ffffff" />
                 {/* <Button variant='outline' colorScheme={"secondary"} rightIcon={<Image src="https://icongr.am/feather/corner-down-right.svg?size=25&color=000" alt='Kit 30 días'/>}>Ver Kit 30 días</Button>
                */}
               </Stack>
