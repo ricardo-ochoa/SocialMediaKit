@@ -157,9 +157,67 @@ h3{
   font-size: 2rem;
 }
 
+.franja{
+  user-select: none; /* supported by Chrome and Opera */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  /* transform: rotateZ(5deg) scale(1.008); */
+}
+
+.textanimated{
+  animation-name: marqueeLine;
+  animation-duration: 20s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  color: white;
+}
+@keyframes marqueeLine {
+  from {
+    transform: translateX(0);
+  }
+  
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+
 .videomain{
   width:321px;
   position: absolute;
+}
+
+.SuccessContainerInfo{
+  border-radius: 3rem 0 0 3rem;
+  
+}
+
+.SuccessContainerImage{
+  border-radius: 0 3rem 3rem 0;
+  overflow: hidden;
+
+}
+
+.acordion1{
+  border-radius: 1rem 1rem 0 0;
+  padding: 1rem;
+}
+
+.acordionTitle:hover{
+  outline-style: none;
+  border-color:transparent;
+}
+
+.acordion2{
+  border-radius: 0 0 1rem 1rem;
+  padding: 1rem;
+}
+
+.acordionTitle{
+  font-size: larger;
+  color: #000;
 }
 
 @media (max-width: 321px) {
@@ -168,4 +226,16 @@ h3{
     position: absolute;
 
   }
+}
+
+@media (max-width: 991px) {
+
+  .SuccessContainerInfo{
+    border-radius: 0 0 3rem 3rem;
+  }
+
+  .SuccessContainerImage{
+    border-radius: 3rem 3rem 0rem 0rem;
+  }
+
 }
