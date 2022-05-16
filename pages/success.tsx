@@ -26,15 +26,15 @@ export const success = () => {
                     </Flex>
                 </Link>
 
-                <Text as={"h1"} fontWeight={"600"} fontSize={{lg:'5xl', sm:"3xl"}} mt={5} lineHeight={"2.5rem"}>Felicidades / Congratulations</Text>
+                <Text as={"h1"} fontWeight={"600"} fontSize={{lg:"5xl", sm:"3xl"}} mt={5} lineHeight={"2.5rem"}>Felicidades / Congratulations</Text>
                 <Text
                 mt={5}
                 mb={5}
                 >Tras el pago, la dirección de correo electrónico que utilizó para realizarlo recibirá un enlace para descargar sus archivos, no olvides revisar la bandeja de spam.</Text>
                 
                 <Text
-                mb={10}
-                >After payment, the email address you used to make your payment will receive a link to download your files, don't forget to check your spam folder.
+                mb={10}>
+                    After payment, the email address you used to make your payment will receive a link to download your files, dont forget to check your spam folder.
                 </Text>
 
 
@@ -44,7 +44,7 @@ export const success = () => {
 
                     <Text>
                     <AccordionButton>
-                        <Box flex='1' textAlign='left' className='acordionTitle'>
+                        <Box flex="1" textAlign="left" className="acordionTitle">
                             Contact for questions and suggestions
                         </Box>
                         <AccordionIcon />
@@ -61,12 +61,12 @@ export const success = () => {
                     </AccordionItem>
                 </Accordion>
 
-                <Accordion className='acordion2' allowMultiple  bgColor={"#f1f1f1"}>
+                <Accordion className="acordion2" allowMultiple  bgColor={"#f1f1f1"}>
                     <AccordionItem border={"none"}>
 
                     <Text>
                     <AccordionButton >
-                        <Box flex='1' textAlign='left' className='acordionTitle'>
+                        <Box flex="1" textAlign="left" className="acordionTitle">
                             Contacto para dudas o sugerencias:
                         </Box>
                         <AccordionIcon />
@@ -107,13 +107,11 @@ export const success = () => {
         fontSize="30px" 
         textTransform={"uppercase"} 
         bgColor={"black"}
-        
         >
             <Flex>
                 <Text flexShrink={"unset"} w="100%" whiteSpace={"nowrap"} className="textanimated" >Disfruta tus plantillas · Enjoy your templates · Disfruta tus plantillas · Enjoy your templates · Disfruta tus plantillas · Enjoy your templates · Disfruta tus plantillas · Enjoy your templates · Disfruta tus plantillas · Enjoy your templates ·</Text>
             </Flex>
         </Stack>
-
 
       </Stack>
   )
