@@ -72,20 +72,20 @@ const Home: NextPage = () => {
 
           <Stack direction="column" w={{ sm:"100%", lg:"445px" }}>
             <Box>
-              <Heading mt={12} fontSize={{ base: '25px', md: '30px', lg: '38px' }} className={styles.title} color={color}  as='h1' textAlign={{ lg:"start" , md:"center" }}>
+              <Heading mt={12} fontSize={{ base: "25px", md: "30px", lg: "38px" }} className={styles.title} color={color}  as="h1" textAlign={{ lg:"start" , md:"center" }}>
               UN AÑO DE PUBLICACIONES PARA TU MARCA
               </Heading>
 
-              <Text fontSize={{ base: '18px' }} textAlign={{ lg:"start" , md:"center" }} mb={4} mt={4} fontWeight={500}>
+              <Text fontSize={{ base: "18px" }} textAlign={{ lg:"start" , md:"center" }} mb={4} mt={4} fontWeight={500}>
               Kit de redes sociales con mas de 365 diseños para tu marca. Disponibles en la plataforma de Canva, listos para usar.
               </Text>
 
               <UnorderedList  mb={6} color="#616161">
-                <ListItem><Text fontSize={{ base: '18px', md: '18px', lg: '18px' }} >Imagen de Perfil <span> (+5)</span></Text></ListItem>
-                <ListItem><Text fontSize={{ base: '18px', md: '18px', lg: '18px' }} >Formato Cuadrados <span> (+100)</span></Text></ListItem>
-                <ListItem><Text fontSize={{ base: '18px', md: '18px', lg: '18px' }} >Formato Verticales <span> (+100)</span></Text></ListItem>
-                <ListItem><Text fontSize={{ base: '18px', md: '18px', lg: '18px' }} >Stories <span> (+135)</span></Text></ListItem>
-                <ListItem><Text fontSize={{ base: '18px', md: '18px', lg: '18px' }} >Covers facebook and likedIn and more <span> (+10)</span></Text></ListItem>
+                <ListItem><Text fontSize={{ base: "18px", md: "18px", lg: "18px" }} >Imagen de Perfil <span> (+5)</span></Text></ListItem>
+                <ListItem><Text fontSize={{ base: "18px", md: "18px", lg: "18px" }} >Formato Cuadrados <span> (+100)</span></Text></ListItem>
+                <ListItem><Text fontSize={{ base: "18px", md: "18px", lg: "18px" }} >Formato Verticales <span> (+100)</span></Text></ListItem>
+                <ListItem><Text fontSize={{ base: "18px", md: "18px", lg: "18px" }} >Stories <span> (+135)</span></Text></ListItem>
+                <ListItem><Text fontSize={{ base: "18px", md: "18px", lg: "18px" }} >Covers facebook and likedIn and more <span> (+10)</span></Text></ListItem>
               </UnorderedList>
             </Box>
               
@@ -102,7 +102,7 @@ const Home: NextPage = () => {
                 </Flex>
               </Stack> */}
               
-              <Stack direction={{md:'row', sm:'column'}} mb={4}>
+              <Stack direction={{md:"row", sm:"column"}} mb={4}>
                 <ButtonCheckout  copy="Comprar Kit" icon="https://icongr.am/feather/arrow-up-right.svg?size=25&color=ffffff" />
                 {/* <Button variant='outline' colorScheme={"secondary"} rightIcon={<Image src="https://icongr.am/feather/corner-down-right.svg?size=25&color=000" alt='Kit 30 días'/>}>Ver Kit 30 días</Button>
                */}
