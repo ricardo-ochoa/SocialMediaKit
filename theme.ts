@@ -14,8 +14,10 @@ export default extendTheme({
         global:{
             body: {
                 backgroundColor: "rgb(241 241 241 / 10%)",
-                
             },
+            Text:{
+                marginInlineStart: "1rem"
+            }
         },
     },
 

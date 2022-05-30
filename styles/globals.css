@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@500;600;700&family=Krona+One&display=swap');
+
 :root {
   --color-primary: #FF5757;
   --color-primary-accent: #000;
@@ -194,14 +196,23 @@ h3{
   
 }
 
+.notFoundInfo{
+  border-radius: 3rem;
+}
+
 .SuccessContainerImage{
   border-radius: 0 3rem 3rem 0;
   overflow: hidden;
-
 }
+
 
 .acordion1{
   border-radius: 1rem 1rem 0 0;
+  padding: 1rem;
+}
+
+.acordionsingle{
+  border-radius: 1rem;
   padding: 1rem;
 }
 
@@ -216,17 +227,37 @@ h3{
 }
 
 .acordionTitle{
-  font-size: larger;
+  font-size: clamp(0.9rem, 8vw - 1rem, 1.2rem);
   color: #000;
+
 }
 
 @media (max-width: 321px) {
   .videomain{
     width:236px;
     position: absolute;
-
   }
 }
+
+@media (max-width: 480px) {
+
+  .notFoundInfo{
+    padding: 1rem;
+    margin-top: 1rem;
+    border-radius: 1.5rem;
+  }
+
+  .backlink{
+    margin-top: 1rem;
+  }
+
+  .colorsStack{
+    flex-direction: column;
+  }
+}
+
+
+
 
 @media (max-width: 991px) {
 
