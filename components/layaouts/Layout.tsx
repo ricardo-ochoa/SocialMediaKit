@@ -11,6 +11,8 @@ interface Props {
   children:
   | React.ReactChild
   | React.ReactChild[];
+
+  "@context": string
 }
 
 
@@ -18,19 +20,22 @@ export const Layout: FC<Props> = ({ children, title, color }) => {
   return (
       <>
         <Head>
-        <script type="application/ld+json">
-        {`
-          "@context": "https://schema.org/", 
-          "@type": "Product", 
-          "name": "Social Media Kit",
-          "image": "https://res.cloudinary.com/dnxxkvpiz/image/upload/v1654019782/Socialemediakit/smkit_nin0sx.gif",
-          "description": "Kit de redes sociales con mas de 365 diseños para tu marca. Disponibles en la plataforma de Canva, listos para usar.",
-          "brand": {
-            "@type": "Brand",
-            "name": "SMK SOCIAL MEDIA KIT"
-          }
-        `}
-        </script>
+        <script type="application/ld+json"
+               dangerouslySetInnerHTML={{
+                __html: JSON.stringify(
+{                  "@context": "https://schema.org/", 
+                  "@type": "Product", 
+                  "name": "Social Media Kit",
+                  "image": "https://res.cloudinary.com/dnxxkvpiz/image/upload/v1654019782/Socialemediakit/smkit_nin0sx.gif",
+                  "description": "Kit de redes sociales con mas de 365 diseños para tu marca. Disponibles en la plataforma de Canva, listos para usar.",
+                  "brand": {
+                    "@type": "Brand",
+                    "name": "SMK SOCIAL MEDIA KIT"
+                  }}
+                )
+              }}
+              key="item-jsonld">
+          </script>
 
           
           <meta name={ title } content="¡Un AÑO de contenido de redes sociales hecho por ti!, Comparte tu contenido único y atractivo todos los días." />
@@ -73,3 +78,7 @@ export const Layout: FC<Props> = ({ children, title, color }) => {
       </>
   )
 };
+function addJsonLd(): { __html: string; } | undefined {
+  throw new Error('Function not implemented.');
+}
+
