@@ -11,14 +11,51 @@ import { Flex, useColorMode, useColorModeValue,Text,Heading, HStack, Image, Unor
 
 const Home: NextPage = () => {
 
-  const { toggleColorMode }= useColorMode();
+  const { toggleColorMode } = useColorMode();
 
-  const formBackground = useColorModeValue('Red.500', 'black')
-  const color = useColorModeValue('#FF5757', '#00DA23')
+  const [ colorMain , setColorMain ] = useState('#FF5757')
+
+  useEffect(() => {
+    
+  }, [])
+  
+
+
+  const color = useColorModeValue(colorMain, colorMain)
+
+  const colorRed = () => {
+    const redcolor = '#FF5757'
+    setColorMain(redcolor)
+  }
+
+  const colorPurple = () => {
+    const purplecolor = '#5827C1'
+    setColorMain(purplecolor)
+  }
+
+  const colorGreen = () => {
+    const greencolor = '#00DA23'
+    setColorMain(greencolor)
+  }
+
+  const colorBlack = () => {
+    const greencolor = '#000000'
+    setColorMain(greencolor)
+  }
+
+  const colorPink = () => {
+    const greencolor = '#E31CB8'
+    setColorMain(greencolor)
+  }
+
+  const colorAqua = () => {
+    const greencolor = '#65D8D1'
+    setColorMain(greencolor)
+  }
 
   return (
 
-      <Layout title='Social Media Kit'>
+      <Layout title='Social Media Kit' color={colorMain} >
 
         <Stack  display={{ sm: "flex" }} direction={{ lg:"row", sm: "column" }} spacing={{ sm: 12 }} justifyContent={{sm:"center"}} alignItems={{ sm: "center" }} marginBottom="100px">
           <Flex alignItems="center" justifyContent="center" >
@@ -89,21 +126,21 @@ const Home: NextPage = () => {
               </UnorderedList>
             </Box>
               
-              {/* <Stack  w={{ sm:"100%", md:"445px" }}>
+              <Stack  w={{ sm:"100%", md:"445px" }}>
                 <Text fontSize={{ base: '18px', md: '18px', lg: '18px' }} mb={4} textAlign={{ md:"start", sm:"center" }}>Select your favorite base color:</Text>
 
                 <Flex className='colors' w={"100%"} justifyContent={"space-around"}>
-                  <div className='btn-red' onClick={toggleColorMode}></div>
-                  <div className='btn-green' onClick={toggleColorMode}></div>
-                  <div className='btn-black' onClick={toggleColorMode}></div>
-                  <div className='btn-pink' onClick={toggleColorMode}></div>
-                  <div className='btn-purple' onClick={toggleColorMode}></div>
-                  <div className='btn-tiffblue' onClick={toggleColorMode}></div>
+                  <div className='btn-red' onClick={colorRed}></div>
+                  <div className='btn-green' onClick={colorGreen}></div>
+                  <div className='btn-black' onClick={colorBlack}></div>
+                  <div className='btn-pink' onClick={colorPink}></div>
+                  <div className='btn-purple' onClick={colorPurple}></div>
+                  <div className='btn-tiffblue' onClick={colorAqua}></div>
                 </Flex>
-              </Stack> */}
+              </Stack>
               
               <Stack direction={{md:"row", sm:"column"}} mb={4}>
-                <ButtonCheckout  copy="Comprar Kit" icon="https://icongr.am/feather/arrow-up-right.svg?size=25&color=ffffff" />
+                <ButtonCheckout color={colorMain}  copy="Comprar Kit" icon="https://icongr.am/feather/arrow-up-right.svg?size=25&color=ffffff" />
                 {/* <Button variant='outline' colorScheme={"secondary"} rightIcon={<Image src="https://icongr.am/feather/corner-down-right.svg?size=25&color=000" alt='Kit 30 días'/>}>Ver Kit 30 días</Button>
                */}
               </Stack>

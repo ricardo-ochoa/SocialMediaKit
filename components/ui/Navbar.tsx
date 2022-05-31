@@ -1,20 +1,16 @@
 
-import { Button } from '@chakra-ui/react';
-import Image from 'next/image';
-import NextLink from 'next/link';
-import { BagIcon }  from './BagIcon'
-import { checkout } from '../../checkout'
-import { ButtonCheckout } from './index';
+import { FC } from 'react';
+import { ButtonCheckout } from './ButtonCheckout';
+
 
 interface lineItems {
 
-    price: string,
-    quantity: number
+    color: string
 
 }
 
 
-export const Navbar = () => {
+export const Navbar:FC<lineItems> = ({ color }) => {
 
     return (
         <div style={{
@@ -23,8 +19,10 @@ export const Navbar = () => {
             padding: '50px 50px',
 
         }}>
-     
-            <ButtonCheckout copy="Comprar Kit" icon="https://icongr.am/feather/shopping-bag.svg?size=20&color=ffffff"/>
+
+            <ButtonCheckout color={ color } copy={ "Comprar Kit"} icon="https://icongr.am/feather/shopping-bag.svg?size=20&color=ffffff"/>
+            
+            {/* <ButtonCheckout color={ color } copy="Comprar Kit" icon="https://icongr.am/feather/shopping-bag.svg?size=20&color=ffffff"/> */}
 
         </div>
     )

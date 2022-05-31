@@ -5,6 +5,11 @@ export default extendTheme({
     colors: {
         primary: theme.colors["red"],
         secondary: theme.colors["white"],
+        green:  ["#00DA23"],
+        black:  ["#000000"],
+        pink:  ["#E31CB8"],
+        purple:  ["#5827C1"],
+        aqua:  ["#65D8D1"],
     },
     fonts: {
         heading: 'Krona One',

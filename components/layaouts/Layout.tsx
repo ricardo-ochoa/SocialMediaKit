@@ -5,14 +5,15 @@ import { Navbar } from '../ui';
 import Script from 'next/script';
 
 interface Props {
-  title?: string;
+  title?: string
+  color: string
   children:
   | React.ReactChild
   | React.ReactChild[];
 }
 
 
-export const Layout: FC<Props> = ({ children, title }) => {
+export const Layout: FC<Props> = ({ children, title, color }) => {
   return (
       <>
         <Head>
@@ -23,7 +24,7 @@ export const Layout: FC<Props> = ({ children, title }) => {
           
       </Head>
 
-        <Navbar />
+        <Navbar color={color}/>
 
         <main style={{
           padding: '0px 20px'
