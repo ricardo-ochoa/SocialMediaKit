@@ -17,11 +17,11 @@ export const Layout: FC<Props> = ({ children, title, color }) => {
   return (
       <>
         <Head>
-          <title>Social Media Kit</title>
-          <meta name={ title } content="Kit para redes sociales" />
+          
+          <meta name={ title } content="¡Un AÑO de contenido de redes sociales hecho por ti!, Comparte tu contenido único y atractivo todos los días." />
 
           <title>Paquete para redes sociales</title>
-          <meta name="description" content="¡Un AÑO de contenido de redes sociales hecho por ti!, Comparta su contenido único y atractivo todos los días." />
+          <meta name="description" content="¡Un AÑO de contenido de redes sociales hecho por ti!, Comparte tu contenido único y atractivo todos los días." />
           <meta name="author" content="Ricardo Ochoa" />
           <meta name="copyright" content="Ricardo @ochoagram" />
           <meta name="robots" content="index"/>
@@ -31,7 +31,7 @@ export const Layout: FC<Props> = ({ children, title, color }) => {
           <meta property="og:url"                content="http://www.nytimes.com/2015/02/19/arts/international/when-great-minds-dont-think-alike.html" />
           <meta property="og:type"               content="website" />
           <meta property="og:title"              content="Kit para redes sociales" />
-          <meta property="og:description"        content="¡Un AÑO de contenido de redes sociales hecho por ti!, Comparta su contenido único y atractivo todos los días." />
+          <meta property="og:description"        content="¡Un AÑO de contenido de redes sociales hecho por ti!, Comparte tu contenido único y atractivo todos los días." />
           <meta property="og:image"              content="https://res.cloudinary.com/dnxxkvpiz/image/upload/v1654019782/Socialemediakit/smkit_nin0sx.gif" />
 
 
