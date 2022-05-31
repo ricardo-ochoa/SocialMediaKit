@@ -57,6 +57,7 @@ const Home: NextPage = () => {
 
       <Layout title='Social Media Kit | Paquete para redes sociales' color={colorMain} >
 
+
         <Stack  display={{ sm: "flex" }} direction={{ lg:"row", sm: "column" }} spacing={{ sm: 12 }} justifyContent={{sm:"center"}} alignItems={{ sm: "center" }} marginBottom="100px">
           <Flex alignItems="center" justifyContent="center" >
           

@@ -4,6 +4,7 @@ import Head from 'next/head';
 import { Navbar } from '../ui';
 import Script from 'next/script';
 
+
 interface Props {
   title?: string
   color: string
@@ -17,6 +18,22 @@ export const Layout: FC<Props> = ({ children, title, color }) => {
   return (
       <>
         <Head>
+        <Script type="application/ld+json">{`
+          {
+                  
+            "@context": "https://schema.org/", 
+            "@type": "Product", 
+            "name": "Social Media Kit",
+            "image": "https://res.cloudinary.com/dnxxkvpiz/image/upload/v1654019782/Socialemediakit/smkit_nin0sx.gif",
+            "description": "Kit de redes sociales con mas de 365 diseños para tu marca. Disponibles en la plataforma de Canva, listos para usar.",
+            "brand": {
+              "@type": "Brand",
+              "name": "SMK SOCIAL MEDIA KIT"
+                }
+            }
+          `}
+        </Script>
+
           
           <meta name={ title } content="¡Un AÑO de contenido de redes sociales hecho por ti!, Comparte tu contenido único y atractivo todos los días." />
 
@@ -40,7 +57,10 @@ export const Layout: FC<Props> = ({ children, title, color }) => {
           <meta name="twitter:site" content="@ochoagram"/>
           <meta name="twitter:creator" content="@ochoagram"/>
           <link rel="icon" href="/favicon.ico" />
+
+          
       </Head>
+
 
         <Navbar color={color}/>
 
