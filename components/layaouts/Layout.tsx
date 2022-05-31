@@ -18,20 +18,18 @@ export const Layout: FC<Props> = ({ children, title, color }) => {
   return (
       <>
         <Head>
-        <script type="application/ld+json">{`
-          {
-                  
-            "@context": "https://schema.org/", 
-            "@type": "Product", 
-            "name": "Social Media Kit",
-            "image": "https://res.cloudinary.com/dnxxkvpiz/image/upload/v1654019782/Socialemediakit/smkit_nin0sx.gif",
-            "description": "Kit de redes sociales con mas de 365 diseños para tu marca. Disponibles en la plataforma de Canva, listos para usar.",
-            "brand": {
-              "@type": "Brand",
-              "name": "SMK SOCIAL MEDIA KIT"
-                }
-            }
-          `}
+        <script type="application/ld+json">
+        {
+          "@context": "https://schema.org/", 
+          "@type": "Product", 
+          "name": "Social Media Kit",
+          "image": "https://res.cloudinary.com/dnxxkvpiz/image/upload/v1654019782/Socialemediakit/smkit_nin0sx.gif",
+          "description": "Kit de redes sociales con mas de 365 diseños para tu marca. Disponibles en la plataforma de Canva, listos para usar.",
+          "brand": {
+            "@type": "Brand",
+            "name": "SMK SOCIAL MEDIA KIT"
+          }
+        }
         </script>
 
           
