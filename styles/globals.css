@@ -59,10 +59,6 @@
   --color-button-text: #000;
 }
 
-
-
-
-
 html,
 body {
   padding: 0;
@@ -71,7 +67,7 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif; */
     font-family: 'Krona One', sans-serif;
     background-color:var( --color-background);
-    background-image: url(../src/bg.png);
+    background-image: url(https://res.cloudinary.com/dnxxkvpiz/image/upload/v1654029390/Socialemediakit/bg_vxzkl6.png);
     background-repeat: repeat repeat;
   }
   

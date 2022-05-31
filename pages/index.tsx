@@ -1,11 +1,11 @@
+import { useEffect, useState } from 'react'
 import type { NextPage } from 'next'
-
-import { SetStateAction, useEffect, useState } from 'react'
 import { Layout } from '../components/layaouts'
 import styles from '../styles/Home.module.css'
 import { ButtonCheckout } from '../components/ui/index';
 
-import { Flex, useColorMode, useColorModeValue,Text,Heading, HStack, Image, UnorderedList, ListItem, Stack, Button, Box , AspectRatio } from '@chakra-ui/react'
+
+import { Flex, useColorMode, useColorModeValue,Text,Heading, UnorderedList, ListItem, Stack, Box} from '@chakra-ui/react'
 
 
 
