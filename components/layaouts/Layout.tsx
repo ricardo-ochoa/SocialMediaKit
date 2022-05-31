@@ -19,7 +19,7 @@ export const Layout: FC<Props> = ({ children, title, color }) => {
       <>
         <Head>
         <script type="application/ld+json">
-        {
+        {`
           "@context": "https://schema.org/", 
           "@type": "Product", 
           "name": "Social Media Kit",
@@ -29,7 +29,7 @@ export const Layout: FC<Props> = ({ children, title, color }) => {
             "@type": "Brand",
             "name": "SMK SOCIAL MEDIA KIT"
           }
-        }
+        `}
         </script>
 
           
