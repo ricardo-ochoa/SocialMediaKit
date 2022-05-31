@@ -57,7 +57,7 @@ export const ButtonCheckout = ({color, copy, icon}) => {
             })
         })}
         >
-        <h4 style={{ color:'white' }}  >{copy}</h4>
+        <h2 style={{ color:'white' }}  >{copy}</h2>
         </Button>
   )
 }
