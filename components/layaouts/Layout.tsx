@@ -18,7 +18,7 @@ export const Layout: FC<Props> = ({ children, title, color }) => {
   return (
       <>
         <Head>
-        <Script type="application/ld+json">{`
+        <script type="application/ld+json">{`
           {
                   
             "@context": "https://schema.org/", 
@@ -32,7 +32,7 @@ export const Layout: FC<Props> = ({ children, title, color }) => {
                 }
             }
           `}
-        </Script>
+        </script>
 
           
           <meta name={ title } content="¡Un AÑO de contenido de redes sociales hecho por ti!, Comparte tu contenido único y atractivo todos los días." />
