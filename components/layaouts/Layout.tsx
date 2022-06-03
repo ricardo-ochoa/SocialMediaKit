@@ -83,11 +83,11 @@ export const Layout: FC<Props> = ({ children, title, color }) => {
             pintrk('load', '2614107730941', {em: '<user_email_address>'});
             pintrk('page');
             />
-            
-            `}} />
             <img height="1" width="1" style={{display:"none;"}} alt="Pinterest tag"
               src="https://ct.pinterest.com/v3/?event=init&tid=2614107730941&pd[em]=cc845bc6711d71f01c59161c01dfb202764634b634aec5e0fcf214965b960963&noscript=1"
             />
+            
+            `}} />
 
           <link rel="icon" href="/favicon.ico" />
       </Head>
