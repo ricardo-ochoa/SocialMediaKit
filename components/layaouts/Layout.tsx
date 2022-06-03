@@ -55,6 +55,7 @@ export const Layout: FC<Props> = ({ children, title, color }) => {
           <meta property="og:image:height"       content="628"/>
 
           {/* Twitter <!-- Open Graph data --> */}
+          <meta name="twitter:account_id" content="18ce55hprg3"/>          
           <meta name="twitter:card" content="summary"/>
           <meta name="twitter:site" content="@ochoagram"/>
           <meta name="twitter:creator" content="@ochoagram"/>
