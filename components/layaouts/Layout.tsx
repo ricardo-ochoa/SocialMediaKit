@@ -80,7 +80,7 @@ export const Layout: FC<Props> = ({ children, title, color }) => {
               t=document.createElement("script");t.async=!0,t.src=e;var
               r=document.getElementsByTagName("script")[0];
               r.parentNode.insertBefore(t,r)}}("https://s.pinimg.com/ct/core.js");
-            pintrk('load', '2614107730941', {em: '<user_email_address>'});
+            pintrk('load', '2614107730941', {em: '<socialmkit@gmail.com>'});
             pintrk('page');
             </script>
             <noscript>
