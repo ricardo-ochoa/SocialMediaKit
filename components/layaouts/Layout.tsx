@@ -63,6 +63,8 @@ export const Layout: FC<Props> = ({ children, title, color }) => {
           <meta property="og:title" content="Social Media Kit" />    
           <meta property="og:description" content="Kit de redes sociales con mas de 365 diseños para tu marca. Disponibles en la plataforma de Canva, listos para usar."/>
           <meta property="twitter:domain" content="socialmediakit.me"/>
+
+          <meta name="p:domain_verify" content="31f7fb4a84f2a1171806ca88da5c63b6"/>
           
           <link rel="icon" href="/favicon.ico" />
       </Head>
