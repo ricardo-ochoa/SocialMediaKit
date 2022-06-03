@@ -12,6 +12,7 @@ export const LinkKit:FC<Props> = ({image, text, color}) => {
   return (
       <>
         <HStack 
+        
         marginTop="0"
         backgroundColor='#ffffff'
         width={'100%'} h={'70px'}
