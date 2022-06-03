@@ -80,18 +80,15 @@ export const Layout: FC<Props> = ({ children, title, color }) => {
               t=document.createElement("script");t.async=!0,t.src=e;var
               r=document.getElementsByTagName("script")[0];
               r.parentNode.insertBefore(t,r)}}("https://s.pinimg.com/ct/core.js");
-            pintrk('load', '2614107730941', {em: '<socialmkit@gmail.com>'});
+            pintrk('load', '2614107730941', {em: '<user_email_address>'});
             pintrk('page');
-            </script>
-            <noscript>
-            <img height="1" width="1" style="display:none;" alt=""
-              src="https://ct.pinterest.com/v3/?event=init&tid=2614107730941&pd[em]=<hashed_email_address>&noscript=1" />
-              ` }}
+            />
+            
+            `}} />
+            <img height="1" width="1" style={{display:"none;"}} alt="Pinterest tag"
+              src="https://ct.pinterest.com/v3/?event=init&tid=2614107730941&pd[em]=cc845bc6711d71f01c59161c01dfb202764634b634aec5e0fcf214965b960963&noscript=1"
             />
 
-
-          {/* <!-- end Pinterest Tag --> */}
-          
           <link rel="icon" href="/favicon.ico" />
       </Head>
 
@@ -104,7 +101,6 @@ export const Layout: FC<Props> = ({ children, title, color }) => {
 
             { children }
         </main>
-
         <Script src="https://js.stripe.com/v3/" strategy="lazyOnload"></Script>
       </>
   )
