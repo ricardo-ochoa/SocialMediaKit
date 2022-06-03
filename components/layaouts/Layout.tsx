@@ -55,15 +55,15 @@ export const Layout: FC<Props> = ({ children, title, color }) => {
           <meta property="og:image:height"       content="628"/>
 
           {/* Twitter <!-- Open Graph data --> */}
-          <meta name="twitter:card" content="summary with large image"/>
+          <meta name="twitter:card" content="summary_large_image"/>
           <meta name="twitter:site" content="@ochoagram"/>
-          <meta property="og:description" content="Kit de redes sociales con mas de 365 diseños para tu marca. Disponibles en la plataforma de Canva, listos para usar."/>
           <meta name="twitter:creator" content="@ochoagram"/>
-          <link rel="icon" href="/favicon.ico" />
-          <meta property="og:url" content="https://socialmediakit.me"/>
-          <meta property="og:image" content="https://res.cloudinary.com/dnxxkvpiz/image/upload/v1654019782/Socialemediakit/smkit_nin0sx.gif"/>
+          <meta property="og:image" content="https://res.cloudinary.com/dnxxkvpiz/image/upload/v1654019782/Socialemediakit/smkit_nin0sx.gif" />
           <meta property="og:title" content="Social Media Kit" />    
+          <meta property="og:description" content="Kit de redes sociales con mas de 365 diseños para tu marca. Disponibles en la plataforma de Canva, listos para usar."/>
+          <meta property="og:url" content="https://socialmediakit.me"/>
           
+          <link rel="icon" href="/favicon.ico" />
       </Head>
 
 
