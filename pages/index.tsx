@@ -123,12 +123,12 @@ const Home: NextPage = () => {
                 <ListItem><Text fontSize={{ base: "18px", md: "18px", lg: "18px" }} >Formato Cuadrados <span> (+100)</span></Text></ListItem>
                 <ListItem><Text fontSize={{ base: "18px", md: "18px", lg: "18px" }} >Formato Verticales <span> (+100)</span></Text></ListItem>
                 <ListItem><Text fontSize={{ base: "18px", md: "18px", lg: "18px" }} >Stories <span> (+135)</span></Text></ListItem>
-                <ListItem><Text fontSize={{ base: "18px", md: "18px", lg: "18px" }} >Covers facebook and likedIn and more <span> (+10)</span></Text></ListItem>
+                <ListItem><Text fontSize={{ base: "18px", md: "18px", lg: "18px" }} >Covers facebook y LikedIn<span> (+10)</span></Text></ListItem>
               </UnorderedList>
             </Box>
               
               <Stack  w={{ sm:"100%", md:"445px" }}>
-                <Text fontSize={{ base: '18px', md: '18px', lg: '18px' }} mb={4} textAlign={{ md:"start", sm:"center" }}>Select your favorite base color:</Text>
+                <Text fontSize={{ base: '18px', md: '18px', lg: '18px' }} mb={4} textAlign={{ md:"start", sm:"center" }}>Selecciona tu color base favorito:</Text>
 
                 <Flex className='colors' w={"100%"} justifyContent={"space-around"}>
                   <div className='btn-red' onClick={colorRed}></div>
@@ -145,6 +145,7 @@ const Home: NextPage = () => {
                 {/* <Button variant='outline' colorScheme={"secondary"} rightIcon={<Image src="https://icongr.am/feather/corner-down-right.svg?size=25&color=000" alt='Kit 30 días'/>}>Ver Kit 30 días</Button>
                */}
               </Stack>
+                <Text fontSize={{ base: '18px', md: '18px', lg: '18px' }} mb={4} textAlign={{ md:"start", sm:"center" }}>*Todos los colores los puedes cambiar a tu gusto.</Text>
           </Stack>
 
         </Stack >

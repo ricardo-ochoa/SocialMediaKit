@@ -30,6 +30,12 @@ export const Layout: FC<Props> = ({ children, title, color }) => {
                   "@type": "Product", 
                   "name": "Social Media Kit",
                   "image": "https://res.cloudinary.com/dnxxkvpiz/image/upload/v1654019782/Socialemediakit/smkit_nin0sx.gif",
+                  "offers": {
+                    "@type": "Offer",
+                    "url": "https://socialmediakit.me/",
+                    "priceCurrency": "MXN",
+                    "price": "1100"
+                  },
                   "description": "Kit de redes sociales con mas de 365 diseños para tu marca. Disponibles en la plataforma de Canva, listos para usar.",
                   "brand": {
                     "@type": "Brand",
