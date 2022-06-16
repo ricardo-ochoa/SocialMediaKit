@@ -15,6 +15,8 @@ const Home: NextPage = () => {
 
   const [ colorMain , setColorMain ] = useState('#FF5757')
 
+  const [ ImageMain , setImageMain ] = useState('https://res.cloudinary.com/dnxxkvpiz/image/upload/v1653883722/Socialemediakit/rojo_bxg7yq.jpg')
+
   useEffect(() => {
     
   }, [])
@@ -26,31 +28,49 @@ const Home: NextPage = () => {
   const colorRed = () => {
     const redcolor = '#FF5757'
     setColorMain(redcolor)
+
+    const redImg = 'https://res.cloudinary.com/dnxxkvpiz/image/upload/v1653883722/Socialemediakit/rojo_bxg7yq.jpg'
+    setImageMain( redImg )
   }
 
   const colorPurple = () => {
     const purplecolor = '#5827C1'
     setColorMain(purplecolor)
+
+    const purpleImg = 'https://res.cloudinary.com/dnxxkvpiz/image/upload/v1653883722/Socialemediakit/purple_y74qft.jpg'
+    setImageMain( purpleImg )
   }
 
   const colorGreen = () => {
     const greencolor = '#00DA23'
     setColorMain(greencolor)
+
+    const greenImg = 'https://res.cloudinary.com/dnxxkvpiz/image/upload/v1655414970/Socialemediakit/green_lka1lu.jpg'
+    setImageMain( greenImg )
   }
 
   const colorBlack = () => {
     const greencolor = '#000000'
     setColorMain(greencolor)
+
+    const blackImg = 'https://res.cloudinary.com/dnxxkvpiz/image/upload/v1653883722/Socialemediakit/negro_zedwy5.jpg'
+    setImageMain( blackImg )
   }
 
   const colorPink = () => {
     const greencolor = '#E31CB8'
     setColorMain(greencolor)
+
+    const pinkImg = 'https://res.cloudinary.com/dnxxkvpiz/image/upload/v1653883722/Socialemediakit/rosa_xqmhvy.jpg'
+    setImageMain( pinkImg )
   }
 
   const colorAqua = () => {
     const greencolor = '#65D8D1'
     setColorMain(greencolor)
+
+    const aquaImg = 'https://res.cloudinary.com/dnxxkvpiz/image/upload/v1653883721/Socialemediakit/turquesa_w3btp9.jpg'
+    setImageMain( aquaImg )
   }
 
   return (
@@ -60,23 +80,18 @@ const Home: NextPage = () => {
 
         <Stack  display={{ sm: "flex" }} direction={{ lg:"row", sm: "column" }} spacing={{ sm: 12 }} justifyContent={{sm:"center"}} alignItems={{ sm: "center" }} marginBottom="100px">
           <Flex alignItems="center" justifyContent="center" >
-          
-            {/* <Box
-             as='video'
-             autoPlay loop muted
-              src='https://res.cloudinary.com/dnxxkvpiz/video/upload/v1651952212/Socialemediakit/rojo_bjpuz2.mp4'
-              w={'321px'}
-              
-              position={"absolute"}
-            ></Box> */}
+        
 
-            <video
+            {/* <video
             className='videomain'
             muted loop controls
             autoPlay
             >
             <source  src='https://res.cloudinary.com/dnxxkvpiz/video/upload/v1651952212/Socialemediakit/rojo_bjpuz2.mp4' type="video/mp4"></source>
-            </video>
+            </video> */}
+
+            <img className='videomain' src={ ImageMain } >
+            </img>
 
           
 
