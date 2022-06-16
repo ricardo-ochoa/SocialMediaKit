@@ -27,7 +27,8 @@ export const Layout: FC<Props> = ({ children, title, color }) => {
                dangerouslySetInnerHTML={{
                 __html: JSON.stringify(
 {                  "@context": "https://schema.org/", 
-                  "@type": "Product", 
+                  "@type": "Product",
+                  "sku": "KIT-YEA-FAS", 
                   "name": "Social Media Kit",
                   "image": "https://res.cloudinary.com/dnxxkvpiz/image/upload/v1654019782/Socialemediakit/smkit_nin0sx.gif",
                   "offers": {

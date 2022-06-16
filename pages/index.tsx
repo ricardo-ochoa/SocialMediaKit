@@ -72,11 +72,10 @@ const Home: NextPage = () => {
 
             <video
             className='videomain'
-            src='https://res.cloudinary.com/dnxxkvpiz/video/upload/v1651952212/Socialemediakit/rojo_bjpuz2.mp4'
-            autoPlay loop muted
-          
+            muted controls loop 
+            autoPlay
             >
-
+            <source  src='https://res.cloudinary.com/dnxxkvpiz/video/upload/v1651952212/Socialemediakit/rojo_bjpuz2.mp4' type="video/mp4"></source>
             </video>
           
 
