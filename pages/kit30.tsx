@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react'
 import type { NextPage } from 'next'
-import { Layout } from '../components/layaouts'
+import { Layout30 } from '../components/layaouts'
 import styles from '../styles/Home.module.css'
-import { ButtonCheckout } from '../components/ui/index';
+import { ButtonCheckout30 } from '../components/ui/index';
 
 
 import { Flex, useColorMode, useColorModeValue,Text,Heading, UnorderedList, ListItem, Stack, Box, Image, Button} from '@chakra-ui/react'
@@ -10,33 +10,30 @@ import Link from 'next/link';
 
 
 
-const Home: NextPage = () => {
-
-  const { toggleColorMode } = useColorMode();
-
-  const [ colorMain , setColorMain ] = useState('#FF5757')
-
-  const [ ImageMain , setImageMain ] = useState('https://res.cloudinary.com/dnxxkvpiz/image/upload/v1653883722/Socialemediakit/rojo_bxg7yq.jpg')
-
-  useEffect(() => {
+const Kit30: NextPage = () => {
     
-  }, [])
-  
+    const { toggleColorMode } = useColorMode();
+
+    const firstcolor = "#FF5757"
+    
+    const [ colorMain , setColorMain ] = useState( firstcolor )
+    const [ ImageMain , setImageMain ] = useState('https://res.cloudinary.com/dnxxkvpiz/image/upload/v1653883722/Socialemediakit/rojo_bxg7yq.jpg')
+    
 
 
   const color = useColorModeValue(colorMain, colorMain)
 
   const colorRed = () => {
     const redcolor = '#FF5757'
-    setColorMain(redcolor)
-
+    setColorMain( redcolor)
+    
     const redImg = 'https://res.cloudinary.com/dnxxkvpiz/image/upload/v1653883722/Socialemediakit/rojo_bxg7yq.jpg'
     setImageMain( redImg )
   }
 
   const colorPurple = () => {
     const purplecolor = '#5827C1'
-    setColorMain(purplecolor)
+    setColorMain( purplecolor)
 
     const purpleImg = 'https://res.cloudinary.com/dnxxkvpiz/image/upload/v1653883722/Socialemediakit/purple_y74qft.jpg'
     setImageMain( purpleImg )
@@ -76,7 +73,7 @@ const Home: NextPage = () => {
 
   return (
 
-      <Layout title='Social Media Kit | Paquete para redes sociales' color={colorMain}>
+      <Layout30 title='Social Media Kit | Paquete para redes sociales' color={colorMain}>
 
 
         <Stack  display={{ sm: "flex" }} direction={{ lg:"row", sm: "column" }} spacing={{ sm: 12 }} justifyContent={{sm:"center"}} alignItems={{ sm: "center" }} marginBottom="100px">
@@ -127,40 +124,40 @@ const Home: NextPage = () => {
           <Stack direction="column" w={{ sm:"100%", lg:"445px" }}>
             <Box>
               <Heading mt={12} fontSize={{ base: "25px", md: "30px", lg: "38px" }} className={styles.title} color={color}  as="h1" textAlign={{ lg:"start" , md:"center" }}>
-              UN AÑO DE PUBLICACIONES PARA TU MARCA
+              30 DÍAS DE PUBLICACIONES
               </Heading>
 
               <Text fontSize={{ base: "18px" }} textAlign={{ lg:"start" , md:"center" }} mb={4} mt={4} fontWeight={500}>
-              Kit de redes sociales con mas de 365 diseños para tu marca. Disponibles en la plataforma de Canva, listos para usar.
+              Templates para redes sociales con mas de 30 diseños para tu marca. Disponibles en la plataforma de Canva, listos para usar.
               </Text>
 
               <UnorderedList  mb={6} color="#616161">
                 <ListItem><Text fontSize={{ base: "18px", md: "18px", lg: "18px" }} >Imagen de Perfil <span> (+5)</span></Text></ListItem>
-                <ListItem><Text fontSize={{ base: "18px", md: "18px", lg: "18px" }} >Formato Cuadrados <span> (+100)</span></Text></ListItem>
-                <ListItem><Text fontSize={{ base: "18px", md: "18px", lg: "18px" }} >Formato Verticales <span> (+100)</span></Text></ListItem>
-                <ListItem><Text fontSize={{ base: "18px", md: "18px", lg: "18px" }} >Stories <span> (+135)</span></Text></ListItem>
-                <ListItem><Text fontSize={{ base: "18px", md: "18px", lg: "18px" }} >Covers facebook y LikedIn<span> (+10)</span></Text></ListItem>
+                <ListItem><Text fontSize={{ base: "18px", md: "18px", lg: "18px" }} >Formato Cuadrados <span> (+20)</span></Text></ListItem>
+                <ListItem><Text fontSize={{ base: "18px", md: "18px", lg: "18px" }} >Formato Verticales <span> (+20)</span></Text></ListItem>
+                <ListItem><Text fontSize={{ base: "18px", md: "18px", lg: "18px" }} >Stories <span> (+30)</span></Text></ListItem>
+                <ListItem><Text fontSize={{ base: "18px", md: "18px", lg: "18px" }} >Covers facebook y LikedIn<span> (5)</span></Text></ListItem>
               </UnorderedList>
             </Box>
               
               <Stack  w={{ sm:"100%", md:"445px" }}>
                 <Text fontSize={{ base: '18px', md: '18px', lg: '18px' }} mb={4} textAlign={{ md:"start", sm:"center" }}>Selecciona tu color base favorito:</Text>
 
-                <Flex className='colors' w={"100%"} justifyContent={"start"} mb={"2rem"}>
-                  <div className='btn-red' onClick={colorRed} ></div>
-                  {/* <div className='btn-green' onClick={colorGreen}></div>
+                <Flex className='colors' w={"100%"} justifyContent={"start"}>
+                  <div className='btn-red' onClick={colorRed}></div>
+                  <div className='btn-green' onClick={colorGreen}></div>
                   <div className='btn-black' onClick={colorBlack}></div>
-                  <div className='btn-pink' onClick={colorPink}></div>
+                  {/* <div className='btn-pink' onClick={colorPink}></div>
                   <div className='btn-purple' onClick={colorPurple}></div>
                   <div className='btn-tiffblue' onClick={colorAqua}></div> */}
                 </Flex>
               </Stack>
               
               <Stack direction={{md:"row", sm:"column"}} mb={4}>
-                <ButtonCheckout color={colorMain}  copy="Comprar Kit" icon="https://icongr.am/feather/arrow-up-right.svg?size=25&color=ffffff" />
-                <Link href="/kit30">
+                <ButtonCheckout30 color={colorMain}  copy="Comprar Kit" icon="https://icongr.am/feather/arrow-up-right.svg?size=25&color=ffffff" />
+                <Link href="/">
 
-                <Button variant='outline' colorScheme={"secondary"} rightIcon={<Image src="https://icongr.am/feather/corner-down-right.svg?size=25&color=000000" alt='Kit 30 días'/>}>Kit de 30 días</Button>
+                <Button variant='outline' colorScheme={"secondary"} rightIcon={<Image src="https://icongr.am/feather/corner-down-right.svg?size=25&color=000000" alt='Kit 30 días'/>}>Kit de 1 año</Button>
                 </Link>
               
               </Stack>
@@ -169,9 +166,9 @@ const Home: NextPage = () => {
 
         </Stack >
 
-      </Layout>
+      </Layout30>
 
   )
 }
 
-export default Home
+export default Kit30

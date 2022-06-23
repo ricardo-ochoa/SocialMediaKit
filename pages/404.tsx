@@ -3,6 +3,7 @@ import NextLink from 'next/link'
 import { Accordion, AccordionButton, AccordionIcon, AccordionItem, AccordionPanel, Box, Divider, Flex, HStack, Image, ListItem, Stack, Text, UnorderedList, VStack } from '@chakra-ui/react'
 import { LinkKit } from '../components/ui';
 import Head from 'next/head';
+import Link from 'next/link';
 
 
 const FourOhFour = () => {
@@ -40,7 +41,7 @@ const FourOhFour = () => {
           <VStack >
               <Box boxSize='sm' bgColor="white" className='notFoundInfo' maxW={"600px"} w={"100%"} h={{lg:"100%",md:"100%",sm:"150%"}}
                   p={{lg:14, md:10, sm:10}} >
-                    <NextLink href="/" passHref>
+                    <Link href="/">
                         <Flex direction={"row"} cursor={"pointer"} className='backlink'>
                             <span>
                                     <Image mr={1} src='https://icongr.am/octicons/arrow-left.svg?size=25&color=currentColor' alt='Back'/>
@@ -49,7 +50,7 @@ const FourOhFour = () => {
                                 Regresar / Back
                             </a>
                         </Flex>
-                    </NextLink>
+                    </Link>
 
                     <Text as={"h1"} fontWeight={"600"} fontSize={{lg:"4xl", sm:"3xl"}} mt={5} lineHeight={"2.5rem"}>Page Not Found</Text>
                     
@@ -65,7 +66,7 @@ const FourOhFour = () => {
                 <Box marginTop={ 5 }>
                   <Stack className='colorsStack' flexDirection={{sm:"column", md:"row"}} gap={"1rem"} rowGap={"0.5rem"} alignItems="center" justifyContent="flex-start" >
                     <LinkKit image='https://res.cloudinary.com/dnxxkvpiz/image/upload/v1653883722/Socialemediakit/rojo_bxg7yq.jpg' text='Kit Rojo' color='primary' />
-                    <LinkKit image='https://res.cloudinary.com/dnxxkvpiz/image/upload/v1653883722/Socialemediakit/verde_daoy0t.jpg' text='Kit Verde' color='#00DA23' />
+                    <LinkKit image='https://res.cloudinary.com/dnxxkvpiz/image/upload/v1655414970/Socialemediakit/green_lka1lu.jpg' text='Kit Verde' color='#00DA23' />
                   </Stack>
                   <Stack className='colorsStack' marginTop={ 4 } flexDirection={{sm:"column", md:"row"}} gap={"1rem"} rowGap={"0.5rem"} alignItems="center" justifyContent="flex-start" >
                     <LinkKit image='https://res.cloudinary.com/dnxxkvpiz/image/upload/v1653883722/Socialemediakit/negro_zedwy5.jpg' text='Kit Negro' color='black' />

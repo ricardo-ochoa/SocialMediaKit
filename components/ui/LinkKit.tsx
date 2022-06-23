@@ -1,6 +1,7 @@
 import React, { FC } from 'react'
 import { HStack, Image, Text, Box } from '@chakra-ui/react';
 import { transform } from 'framer-motion';
+import Link from 'next/link';
 
 interface Props {
     image: string
@@ -11,8 +12,8 @@ interface Props {
 export const LinkKit:FC<Props> = ({image, text, color}) => {
   return (
       <>
-        <HStack 
-        
+        <Link href="/">
+        <HStack
         marginTop="0"
         backgroundColor='#ffffff'
         width={'100%'} h={'70px'}
@@ -30,6 +31,7 @@ export const LinkKit:FC<Props> = ({image, text, color}) => {
             <Text fontWeight={500} color={ color } as={"h3"} fontSize={'1.1rem'}> { text } </Text>
 
         </HStack>
+        </Link>
     </>
   )
 }
